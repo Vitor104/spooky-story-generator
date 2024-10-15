@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    color: #EBF2B6;
+    border-top: 1px solid #F2A341;
+    border-bottom: 1px solid #F2A341;
+    width: 100%;
+    height: 8em;
+    display: flex;
+    align-items: center;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
+}
+
+.li {
+    margin: 2em;
+    cursor: pointer;
+}
+
+.hoverPumpkin {
+    transition: 0.3s; /* Optional: Adds a transition effect */
+    height: 2em;
+    width: 2em;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .hoverPumpkin:hover {
+    content: url("C:\Users\Vitor\Desktop\Projects\spooky-story-generator\src\components\header\pumpkin-2892303_1280.jpg"); /* Replaces the image on hover */
+  }
+  

@@ -5,19 +5,48 @@
 }
 
 .header {
-    background-image: url("C:\Users\Vitor\Desktop\Projects\spooky-story-generator\src\components\header\sprite5-sheet0.png");
-    height: 25em;
+    height: 45em;
     width: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.castle {
+    width: 100%;
+    height: auto;
 }
 
 .welcome {
     color: #EBF2B6;
     position: relative;
-    top: 1em;
+    text-transform: uppercase;   
+    letter-spacing: 1.5px; 
+}
+
+.animatedBat {
+    position: relative;
+  /*
+    animation-name: bat;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    */
+}
+
+@keyframes bat {
+    0% {
+        left: -230px; /* Start off-screen on the left */
+    }
+    100% {
+        left: 100%; /* Move to the right, off-screen */
+    }
+}
+
+@keyframes theWelcome {
+    0% {
+        left: 20px; /* Start off-screen on the left */
+    }
+    100% {
+        left: 100%; /* Move to the right, off-screen */
+    }
 }
