@@ -5,20 +5,40 @@
 }
 
 .header {
-    height: 45em;
-    width: auto;
+    height: 35em;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     background-color: black;
 }
 
-.castle {
-    height: 30em;
-    width: 30em;
-    margin: 0 auto;
+.appName {
+    width: 100%;
+    height: 4em;
+    border-bottom: 1px solid #F29F05;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.pumpkinImage {
+    height: 2em;
+    width: 2em;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+
+.pumpkin {
+    height: 25em;
+    width: 25em;
+}
+
 
 
 .animatedBat {
@@ -33,15 +53,6 @@
 @keyframes bat {
     0% {
         left: -230px; /* Start off-screen on the left */
-    }
-    100% {
-        left: 100%; /* Move to the right, off-screen */
-    }
-}
-
-@keyframes theWelcome {
-    0% {
-        left: 20px; /* Start off-screen on the left */
     }
     100% {
         left: 100%; /* Move to the right, off-screen */
