@@ -5,13 +5,23 @@
 }
 
 .header {
-    height: 35em;
+    height: 45em;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     flex-direction: column;
+    background-image: url("C:\Users\Vitor\Desktop\Projects\spooky-story-generator\src\components\header\halloween-2837936_1280.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: black;
+}
+
+.divBtn {
+    position: relative;
+    right: 4em;
+    width: 50%;
+    color: white;
 }
 
 .appName {
@@ -26,17 +36,13 @@
 .pumpkinImage {
     height: 2em;
     width: 2em;
+    border-radius: 50%;
 }
 
 .name {
     font-size: 16px;
     font-weight: bolder;
     color: white;
-}
-
-.pumpkin {
-    height: 25em;
-    width: 25em;
 }
 
 
@@ -59,3 +65,23 @@
     }
 }
 
+@media only screen and (min-width: 1440px) {
+    .header {
+        height: 50em;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .appName {
+        height: 10em;
+    }
+
+    .name {
+        font-size: 32px;
+    }
+    
+    .pumpkinImage {
+        width: 5em;
+        height: 5em;
+    }
+}
