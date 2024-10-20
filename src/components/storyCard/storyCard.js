@@ -1,6 +1,10 @@
 import React from "react";
 
+
 function StoryCard() {
+  
+
+
     return (
         <div class="card">
   <img src="..." class="card-img-top" alt="..."></img>
